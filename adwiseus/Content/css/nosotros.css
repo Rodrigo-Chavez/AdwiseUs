@@ -1,0 +1,469 @@
+﻿:root {
+    --blue: rgb(29, 53, 96);
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+}
+
+.background {
+    background-color: #C9C9C9;
+}
+
+.divContainer {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.divPhoto {
+    margin: 10px;
+    width: 50%;
+}
+
+    .divPhoto img {
+        width: 100%;
+    }
+
+.divContaienrText {
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    padding: 5%;
+    margin-left: -10%;
+    margin-right: 20px;
+}
+
+.backgroundInfo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/information Image Nosotros.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 3;
+}
+
+.imageMisiones {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.imageVision {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.backgroundBlue {
+    background-color: var(--blue);
+}
+
+.colorBlue {
+    color: var(--blue);
+}
+
+.ulList {
+    border-left: 2px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    list-style-type: none;
+}
+
+.buttonBorder {
+    border: 2px solid var(--blue);
+}
+
+button:hover {
+    background-color: #c9ced7 !important;
+}
+
+.ulList li {
+    padding: 5px
+}
+
+.imageTriangle {
+    height: 20px
+}
+
+
+.divMisionText {
+    padding-left: 15px;
+}
+
+.divImageMision {
+    padding-left: 15px;
+}
+
+.divVisionText {
+    padding-left: 15px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.imageResposible {
+    animation: slideInFromLeft 3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.textAppear {
+    animation: fadeIn 4s ease-out;
+}
+
+.timeline-container {
+    display: flex;
+    text-align: center;
+    height: 80vh;
+    width: 90vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timeline {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    justify-content: space-around;
+    border-top: 2px solid #333;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.timeline-container {
+    margin: auto;
+}
+
+.desc{
+    width: 400px;
+}
+
+.year-marker {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+    .year-marker .circle {
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    .year-marker.up .circle::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 50px;
+        background-color: #333;
+    }
+
+    .year-marker.down .circle::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 50px;
+        background-color: #333;
+    }
+
+    .year-marker.up .description {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        height: auto;
+    }
+
+.year-marker-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.up > .year-marker-content {
+    top: -900%;
+}
+
+.down > .year-marker-content {
+    top: 300%;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.year {
+    display: block;
+    font-weight: bold;
+    color: var(--blue);
+    width: 100%;
+}
+
+.description {
+    display: block !important;
+    width: 100%;
+}
+
+.see-more {
+    color: #3b78e5;
+    cursor: pointer;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.display-text {
+    display: none;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    width: 90%;
+    background-color: var(--white);
+    text-align: justify;
+    border-radius: 15px;
+}
+
+
+
+
+    .display-text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: var(--blue);
+        font-weight: bold;
+    }
+
+    .display-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: var(--black);
+    }
+
+    .display-text p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: var(--black);
+    }
+
+.left-arrow-button,
+.right-arrow-button {
+    border: none;
+    cursor: pointer;
+}
+
+    .left-arrow-button > .svg-arrow,
+    .right-arrow-button > .svg-arrow {
+        cursor: inherit;
+    }
+
+
+.left-arrow-button {
+    transform: rotate(90deg);
+}
+
+.right-arrow-button {
+    transform: rotate(-90deg);
+}
+
+
+
+@media (min-width: 992px) {
+    .year-marker-content {
+        width: 180%;
+    }
+
+    .left-arrow-button,
+    .right-arrow-button {
+        cursor: not-allowed !important;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .description{
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 11px;
+    }
+
+
+}
+
+@media  (max-width: 992px) {
+    .timeline {
+        grid-template-columns: repeat(8, 40vw);
+        overflow-x: clip;
+    }
+
+    .year-marker-content{
+        width: 60%;
+    }
+
+    .move-to-0 {
+        transform: translateX(0);
+    }
+
+    .move-to-100 {
+        transform: translateX(-100%);
+    }
+
+    .move-to-200 {
+        transform: translateX(-200%);
+    }
+
+    .move-to-300 {
+        transform: translateX(-300%);
+    }
+
+    .move-to-400 {
+        transform: translateX(-400%);
+    }
+
+    .move-to-500 {
+        transform: translateX(-500%);
+    }
+
+    .move-to-600 {
+        transform: translateX(-600%);
+    }
+
+    .move-to-700 {
+        transform: translateX(-700%);
+    }
+
+    .move-to-800 {
+        transform: translateX(-800%);
+    }
+}
+
+
+
+
+@media(max-width: 600px) {
+    .divContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divPhoto {
+        width: 100%;
+    }
+
+    .backgroundInfo h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .divContaienrText {
+        margin-right: 0;
+        margin-bottom: 5%;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .divProyectosText h2 {
+        width: 100% !important;
+    }
+
+    .divProyectosText a {
+        width: 70% !important;
+    }
+
+    .divCointainerMision {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .divMisionText {
+        width: 100% !important;
+        text-align: center;
+    }
+
+        .divMisionText h2 {
+            width: 100% !important;
+            text-align: center;
+        }
+   
+
+    .divImageMision {
+        padding-left: 17px !important;
+    }
+
+    .divCointainerVision {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .divVisionImage {
+        width: 100% !important;
+    }
+
+    .divVisionText {
+        padding-left: 17px;
+        width: 100% !important;
+    }
+
+    .divButtonList {
+        width: 100% !important;
+        padding: 10px;
+    }
+
+    .imageResposible {
+        width: 100% !important;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .imageResposible {
+        width: 100%;
+    }
+}

@@ -1,0 +1,292 @@
+﻿@using System.Globalization
+@using adwiseus.App_GlobalResources
+@{
+    ViewData["Title"] = "Nosotros";
+    var culture = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
+}
+<link rel="stylesheet" href="~/Content/css/nosotros.css" asp-append-version="true" />
+
+<div>
+
+    <!-- #region CEO MAX -->
+
+    <section>
+        <div class="text-center p-5">
+            <h1 class="text-blue display-3">@adwiseus.App_GlobalResources.Resources.nosotros_Title</h1>
+        </div>
+        <div class="divContainer text-blue">
+            <div class="divPhoto">
+                <img src="~/Content/Images/Max Photo.png" alt="Imagen de Max" />
+            </div>
+            <div class="divContaienrText">
+                <h2 class="display-4 fw-bold">@Resources.nosotros_CEO</h2>
+                <p>
+                    @Resources.nosotros_Max1
+                </p>
+                <p>
+                    @Resources.nosotros_Max2
+                </p>
+                <p>
+                    @Resources.nosotros_Max3
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+    <!-- #region IMAGE INFROMATION -->
+
+    <section class="backgroundInfo d-flex justify-content-center align-items-center">
+        <h2 class="textAppear text-white display-3">@Resources.nosotros_Title2</h2>
+    </section>
+
+    <!-- #endregion -->
+    <!-- #region PROYECTOS -->
+
+    <section class="d-flex flex-column justify-content-center align-items-center">
+        <div class="timeline-container">
+            <input type="hidden" name="Url" value="@Request.RawUrl" id="urlInfo"/>
+            <button class="left-arrow-button">
+                <svg class="svg-arrow" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583" id="arrow_down-[#338]">
+
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+
+                </svg>
+            </button>
+
+            <div class="timeline">
+                <div class="year-marker up">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2006</span>
+                        <span class="description">@Resources.nosotros_timeline_1</span>
+                        <button class="see-more" data-year="2006">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+                <div class="year-marker down">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2008</span>
+                        <span class="description">@Resources.nosotros_timeline_2</span>
+                        <button class="see-more" data-year="2008">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+                <div class="year-marker up">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2009</span>
+                        <span class="description desc">@Resources.nosotros_timeline_3</span>
+                        <button class="see-more" data-year="2009">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+                <div class="year-marker down">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2010</span>
+                        <span class="description">@Resources.nosotros_timeline_4</span>
+                        <button class="see-more" data-year="2010">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+
+                <div class="year-marker up">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2010</span>
+                        <span class="description">@Resources.nosotros_timeline_5</span>
+                        <button class="see-more" data-year="2010.5">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+
+                <div class="year-marker down">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2011</span>
+                        <span class="description">@Resources.nosotros_timeline_6</span>
+                        <button class="see-more" data-year="2011">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+                <div class="year-marker up">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2013</span>
+                        <span class="description">@Resources.nosotros_timeline_7</span>
+                        <button class="see-more" data-year="2013">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+                <div class="year-marker down">
+                    <div class="circle"></div>
+                    <div class="year-marker-content">
+                        <span class="year">2015</span>
+                        <span class="description">@Resources.nosotros_timeline_8</span>
+                        <button class="see-more" data-year="2015">@Resources.nosotros_timeline_button</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="right-arrow-button">
+                <svg class="svg-arrow" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583" id="arrow_down-[#338]">
+
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+
+                </svg>
+            </button>
+
+
+        </div>
+
+        <div id="display-text" class="display-text">
+        </div>
+
+        <div class="divProyectosText d-flex flex-column justify-content-center align-items-center w-100 p-5 text-center">
+            <h2 class="w-25 pb-5">@Resources.index_buttonText</h2>
+            <a class="w-25 backgroundBlue fw-bold text-white d-flex justify-content-between align-items-center ps-5 pe-3 text-decoration-none"
+               href="Perfiles">
+                @Resources.nosotros_timeline_button
+                <img src="~/Content/Images/right arrow white.png" alt="flecha a la derecha" />
+            </a>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+    <!-- #region MISIONES -->
+
+    <section class="p-2 mb-5">
+        <div class="divCointainerMision bg-white d-flex">
+            <div class="divMisionText w-50 d-flex flex-column justify-content-center align-items-start p-5">
+                <h2 class="display-4 fw-bold">@Resources.nosotros_mision_title</h2>
+                <p class="display-6">@Resources.nosotros_mision_descr</p>
+            </div>
+            <div class="divImageMision p-2">
+                <img class="imageMisiones" src="~/Content/Images/ImageMisionesNosotros.png" alt="imagen de misiones" />
+            </div>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+    <!-- #region VISION -->
+
+    <section class=" p-2">
+        <div class="backgroundBlue divCointainerVision d-flex">
+            <div class="divVisionImage w-50 p-2">
+                <img class="imageVision" src="~/Content/Images/Image Vision Nosotros.png" alt="imagen de vision" />
+            </div>
+            <div class="divVisionText d-flex flex-column justify-content-center align-items-start text-white p-5">
+                <h2 class="display-4 fw-bold">@Resources.nosotros_vision_title</h2>
+                <p class="display-6">@Resources.nosotros_vision_descr</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+    <!-- #region VALORES -->
+
+    <section class="d-flex flex-column justify-content-center align-items-center py-5">
+        <h2 class="colorBlue fw-bold display-4">VALORES</h2>
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+            <div class="divButtonList d-flex flex-column justify-content-center align-items-center w-50 py-2 ">
+                <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list1', 'toggleImage1')">
+                    <img id="toggleImage1" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                   @Resources.nosotros_ejecucion_title
+                </button>
+                <ul class="ulList text-start w-100 p-3" id="list1" style="display:none;">
+                    <li class="mt-2">@Resources.nosotros_ejecucion_li1</li>
+                    <li class="mt-2">@Resources.nosotros_ejecucion_li2</li>
+                    <li class="mt-2">@Resources.nosotros_ejecucion_li3</li>
+                    <li class="mt-2">@Resources.nosotros_ejecucion_li4</li>
+                    <li class="mt-2">@Resources.nosotros_ejecucion_li5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+            <div class="divButtonList d-flex flex-column justify-content-center align-items-center w-50 py-2 ">
+                <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent" type="button" onClick="toggleList('list2', 'toggleImage2')">
+                    <img id="toggleImage2" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                    @Resources.nosotros_excelencia_title
+                </button>
+                <ul class="ulList text-start w-100 p-3" id="list2" style="display:none;">
+                    <li class="mt-2">@Resources.nosotros_excelencia_li1</li>
+                    <li class="mt-2">@Resources.nosotros_excelencia_li2</li>
+                    <li class="mt-2">@Resources.nosotros_excelencia_li3</li>
+                    <li class="mt-2">@Resources.nosotros_excelencia_li4</li>
+                    <li class="mt-2">@Resources.nosotros_excelencia_li5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+            <div class="divButtonList d-flex flex-column justify-content-center align-items-center w-50 py-2 ">
+                <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent" type="button" onClick="toggleList('list3', 'toggleImage3')">
+                    <img id="toggleImage3" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                   @Resources.nosotros_rentabilidad_title
+                </button>
+                <ul class="ulList text-start w-100 p-3" id="list3" style="display:none;">
+                    <li class="mt-2">@Resources.nosotros_rentabilidad_li1</li>
+                    <li class="mt-2">@Resources.nosotros_rentabilidad_li2</li>
+                    <li class="mt-2">@Resources.nosotros_rentabilidad_li3</li>
+                    <li class="mt-2">@Resources.nosotros_rentabilidad_li4</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+            <div class="divButtonList d-flex flex-column justify-content-center align-items-center w-50 py-2 ">
+                <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent" type="button" onClick="toggleList('list4', 'toggleImage4')">
+                    <img id="toggleImage4" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                    @Resources.nosotros_transparencia_title
+                </button>
+                <ul class="ulList text-start w-100 p-3" id="list4" style="display:none;">
+                    <li class="mt-2">@Resources.nosotros_transparencia_li1</li>
+                    <li class="mt-2">@Resources.nosotros_transparencia_li2</li>
+                    <li class="mt-2">@Resources.nosotros_transparencia_li3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+            <div class="divButtonList d-flex flex-column justify-content-center align-items-center w-50 py-2 ">
+                <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent" type="button" onClick="toggleList('list5', 'toggleImage5')">
+                    <img id="toggleImage5" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                    @Resources.nosotros_crecimiento_title
+                </button>
+                <ul class="ulList text-start w-100 p-3" id="list5" style="display:none;">
+                    <li class="mt-2">@Resources.nosotros_crecimiento_li1</li>
+                    <li class="mt-2">@Resources.nosotros_crecimiento_li2</li>
+                    <li class="mt-2">@Resources.nosotros_crecimiento_li3</li>
+                    <li class="mt-2">@Resources.nosotros_crecimiento_li4</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- #endregion -->
+    <!-- #region RESPONSABILIDAD SOCIAL -->
+
+    <section class="d-flex flex-column justify-content-center align-items-center w-auto">
+        <h2 class="colorBlue p-1 display-4 fw-bold">@Resources.nosotros_responsabilidad_h1</h2>
+        <div class=" p-5">
+            <img class="img-fluid" src="~/Content/Images/responsabilidad Image Nosotros.png" />
+        </div>
+    </section>
+
+    <!-- #endregion -->
+    
+</div>
+
+
+<script src="~/Content/js/Nosotros.js"></script>

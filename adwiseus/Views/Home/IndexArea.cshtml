@@ -1,0 +1,66 @@
+﻿@using System.Globalization
+@using adwiseus.App_GlobalResources
+@{
+    ViewData["Title"] = "AreaDeEspecialidad";
+}
+<link rel="stylesheet" href="~/Content/css/areaEspecialidad.css" asp-append-version="true" />
+<div class="d-flex justify-content-center align-items-center img-container img-container1 position-relative ">
+    <h1 class="display-4 text-white fw-bold text-header">@Resources.indexArea_h1</h1>
+    <div class="bg-black bg-opacity-25 w-100 h-100 position-absolute">
+    </div>
+</div>
+<div class="p-4 p-lg-5 px-xl-5 text-blue">
+    <p style="font-size:21px">@Resources.indexArea_descr</p>
+</div>
+<div class="row ">
+    <div class="col-12 col-md-6 mb-4">
+        <div class="d-flex justify-content-center align-items-center img-container img-container2">
+            <a href="@Url.Action("TalentManagement", "Home")" class="link">
+
+                <h1 class="display-4 text-center">@Resources.outsourcing_h2_1</h1>
+
+            </a>
+        </div>
+        <div class="box-text mt-2">
+            <p>@Resources.outsourcing_p_1</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 mb-4">
+        <div class="d-flex justify-content-center align-items-center img-container img-container3">
+            <a href="@Url.Action("ProcessInnovation", "Home")" class="link">
+
+                <h1 class="display-4 text-center">@Resources.outsourcing_h2_2</h1>
+
+            </a>
+        </div>
+        <div class="box-text mt-2">
+            <p>@Resources.outsourcing_p_2</p>
+        </div>
+    </div>
+</div>
+<div class="row ">
+    <div class="col-12 col-md-6 mb-4">
+        <div class="d-flex justify-content-center align-items-center img-container img-container4">
+            <a href="@Url.Action("FinanceAudit", "Home")" class="link">
+
+                <h1 class="display-4 text-center">@Resources.outsourcing_h2_3</h1>
+
+            </a>
+        </div>
+        <div class="box-text mt-2">
+            <p>@Resources.outsourcing_p_3</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 mb-4">
+        <div class="d-flex justify-content-center align-items-center img-container img-container5">
+            <a href="@Url.Action("Outsourcing", "Home")" class="link">
+
+                <h1 class="display-4 text-center">@Resources.outsourcing_h2_4</h1>
+
+            </a>
+        </div>
+        <div class="box-text mt-2">
+            <p>@Resources.outsourcing_p_4</p>
+        </div>
+    </div>
+</div>

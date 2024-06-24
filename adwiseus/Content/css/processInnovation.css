@@ -1,0 +1,20 @@
+.img-container {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 430px;
+  font-size: 45px;
+  background-image: url("../images/ContactoFondo.jpg");
+  background-position-y: 50%;
+  background-attachment: fixed;
+}
+
+
+.text-header{
+    z-index:2;
+}
+
+    .img-container h1 {
+        font-weight: 500;
+    }
+

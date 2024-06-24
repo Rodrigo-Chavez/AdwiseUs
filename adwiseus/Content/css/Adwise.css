@@ -1,0 +1,21 @@
+﻿.img-container {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 430px;
+    font-size: 45px;
+    background-image: url("../images/AdwiseUniversityFondo.jpg");
+    
+}
+    .img-container h1 {
+        font-weight: 500;
+    }
+    h2 {
+    font-size: 45px !important;
+    letter-spacing: 1px;
+   
+}
+
+.text-header {
+    z-index: 2;
+}

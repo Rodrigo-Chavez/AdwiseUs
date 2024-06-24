@@ -1,0 +1,134 @@
+﻿:root {
+    --blue: rgb(29, 53, 96);
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    background-color: #C9C9C9;
+}
+
+.colorBlue {
+    color: var(--blue);
+}
+
+
+.backgroundProyecto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/bookPerfiles.jpeg');
+    height: 50vh;
+    background-position: 100% 20%;
+    background-size: cover;
+    opacity: 3;
+}
+
+.ulList {
+    border-left: 2px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
+    border-right: 2px solid var(--blue);
+    list-style-type: none;
+}
+
+.buttonBorder {
+    border: 2px solid var(--blue);
+}
+
+.ulList li {
+    padding: 5px
+}
+
+.imageTriangle {
+    height: 20px
+}
+
+.sectionClients,
+.sectionPartners {
+    height: 50vh;
+}
+
+.sliderContainer {
+    height: auto;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+    .sliderContainer .moveClients {
+        display: flex;
+    }
+
+    .sliderContainer .move {
+        display: flex;
+    }
+
+    .sliderContainer .box{
+        height: auto;
+        width: auto;
+        flex: 0 0 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sliderContainer .client-box {
+        height: auto;
+        width: auto;
+        flex: 0 0 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.partnershipLogo {
+    width: 50%;
+    margin: 20px;
+}
+
+.client-logo{
+    width: 50%;
+    margin:20px;
+}
+
+@keyframes scrollClients {
+    0% {
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(90%);
+    }
+}
+
+@keyframes scrollPartnership {
+    0% {
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(90%);
+    }
+}
+
+@media(max-width: 600px) {
+    .divTextPerfil{
+        width: 100% !important;
+    }
+
+    .divButtonPerfil{
+        width: 100% !important;
+       
+    }
+
+    .sectionClients{
+        height: 30vh
+    }
+
+    .sectionPartners {
+        height: 30vh
+    }
+
+    .backgroundProyecto {
+        background-position: center;
+        background-size: cover;
+    }
+ 
+}

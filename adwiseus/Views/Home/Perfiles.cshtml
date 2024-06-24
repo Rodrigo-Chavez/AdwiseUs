@@ -1,0 +1,211 @@
+﻿@using System.Globalization
+@using adwiseus.App_GlobalResources
+@{
+    ViewData["Title"] = "Perfiles";
+}
+<link rel="stylesheet" href="~/Content/css/perfiles.css" asp-append-version="true" />
+
+<!-- #region Proyecto Title -->
+
+<section class="backgroundProyecto d-flex justify-content-center align-items-center">
+    <h1 class="text-white fw-bold">@Resources.perfiles_h1</h1>
+</section>
+
+<!-- #endregion -->
+<!-- #region Info Proyectos -->
+
+<section class="d-flex flex-column justify-content-center align-items-center pb-5">
+    <div class="divTextPerfil fs-4 text-blue   p-5">
+        <p style="text-align:justify">@Resources.perfiles_descr</p>
+    </div>
+
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+        <div class="divButtonPerfil d-flex flex-column justify-content-center align-items-center w-50 p-2 ">
+            <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list1', 'toggleImage1')">
+                <img id="toggleImage1" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+               @Resources.perfiles_proyecto_1
+            </button>
+            <ul class="ulList text-start w-100 p-1" id="list1" style="display:none;">
+                <li>@Resources.perfiles_proyecto_1_li1</li>
+                <li class="fw-bold">@Resources.perfiles_proyecto_1_li2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+        <div class="divButtonPerfil d-flex flex-column justify-content-center align-items-center w-50 p-2 ">
+            <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list2', 'toggleImage2')">
+                <img id="toggleImage2" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                @Resources.perfiles_proyecto_2
+            </button>
+            <ul class="ulList text-start w-100 p-1" id="list2" style="display:none;">
+                <li>@Resources.perfiles_proyecto_2_li1</li>
+                <li class="fw-bold">@Resources.perfiles_proyecto_2_li2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+        <div class="divButtonPerfil d-flex flex-column justify-content-center align-items-center w-50 p-2 ">
+            <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list3', 'toggleImage3')">
+                <img id="toggleImage3" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                @Resources.perfiles_proyecto_3
+            </button>
+            <ul class="ulList text-start w-100 p-1" id="list3" style="display:none;">
+                <li>@Resources.perfiles_proyecto_3_li1</li>
+                <li class="fw-bold">@Resources.perfiles_proyecto_3_li2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+        <div class="divButtonPerfil d-flex flex-column justify-content-center align-items-center w-50 p-2 ">
+            <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list4', 'toggleImage4')">
+                <img id="toggleImage4" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                @Resources.perfiles_proyecto_4
+            </button>
+            <ul class="ulList text-start w-100 p-1" id="list4" style="display:none;">
+                <li>@Resources.perfiles_proyecto_4_li1</li>
+                <li class="fw-bold">@Resources.perfiles_proyecto_4_li2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+        <div class="divButtonPerfil d-flex flex-column justify-content-center align-items-center w-50 p-2 ">
+            <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list5', 'toggleImage5')">
+                <img id="toggleImage5" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                @Resources.perfiles_proyecto_5
+            </button>
+            <ul class="ulList text-start w-100 p-1" id="list5" style="display:none;">
+                <li>@Resources.perfiles_proyecto_5_li1</li>
+                <li class="fw-bold">@Resources.perfiles_proyecto_5_li2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w-100 d-flex flex-column justify-content-center align-items-center colorBlue ">
+        <div class="divButtonPerfil d-flex flex-column justify-content-center align-items-center w-50 p-2 ">
+            <button class="colorBlue buttonBorder fw-bold w-100 text-start p-2 bg-transparent " type="button" onClick="toggleList('list6', 'toggleImage6')">
+                <img id="toggleImage6" class="imageTriangle p-1" src="~/Content/Images/triangule right Nosotros.png" alt="triangule" />
+                @Resources.perfiles_proyecto_6
+            </button>
+            <ul class="ulList text-start w-100 p-1" id="list6" style="display:none;">
+                <li>@Resources.perfiles_proyecto_6_li1</li>
+                <li class="fw-bold">@Resources.perfiles_proyecto_6_li2</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!-- #endregion -->
+<!-- #region Clientes -->
+
+<section class="d-flex flex-column justify-content-center align-items-center sectionClients">
+    <h2 class="p-5 text-blue">@Resources.perfiles_clients_h2</h2>
+    <div class="sliderContainer d-flex justify-content-center align-items-center">
+        <div class="moveClients client-move">
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/3M Logo.png" alt="Logo 3m"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/American Logo.png" alt="Logo American"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Avon Logo.png" alt="Logo Avon"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Bac Logo.png" alt="Logo Bac"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Banapis Logo.png" alt="Logo Banapis"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Banco Nacionl Logo.png" alt="Logo Nacional"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Bimbo Logo.png" alt="Logo Bimbo"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Bn brana Logo.png" alt="Logo Bn brana"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Bureau Logo.png" alt="Logo Bureau"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Cargill Logo.png" alt="Logo Cargill"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/CBM Logo.png" alt="Logo CBM"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Cemex Logo.png" alt="Logo Cemex"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/CITI Logo.png" alt="Logo CITI"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Continental Logo.png" alt="Logo Contiental"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/DHL Logo.png" alt="Logo DHL"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Emsula Logo.png" alt="Logo Emsula"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Henkel Logo.png" alt="Logo Henkel"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/HSBC Logo.png" alt="Logo HSBC"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Kattan Logo.png" alt="Logo Kattan"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/LG Logo.png" alt="Logo LG"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Lovable Logo.png" alt="Logo Lovable"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Monge Logo.png" alt="Logo Monge"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Pacific Logo.png" alt="Logo Pacific"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Protect Logo.png" alt="Logo Protect"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Roble Logo.png" alt="Logo Roble"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Sab Logo.png" alt="Logo Sab"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Schneider Logo.png" alt="Logo Schenider"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Sysde Logo.png" alt="Logo Sysde"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/UCR Logo.png" alt="Logo UCR"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/VF Logo.png" alt="Logo VF"></div>
+            <div class=" client-box"><img class="client-logo" src="~/Content/Perfiles Images/Clientes/Walmart Logo.png" alt="Logo Walmart"></div>
+        </div>
+    </div>
+</section>
+
+<!-- #endregion -->
+<!-- #region Partners -->
+
+<section class="d-flex flex-column justify-content-center align-items-center sectionPartners">
+    <h2 class="p-5 text-blue">Partnership</h2>
+    <div class="sliderContainer d-flex justify-content-center align-items-center">
+        <div class="move partner-move">
+            <div class="box"><img class="partnershipLogo" src="~/Content/Perfiles Images/Partners/Aulasneo.png" alt="Logo Aulasneo"></div>
+            <div class="box"><img class="partnershipLogo" src="~/Content/Perfiles Images/Partners/Deinsa.png" alt="Logo Deinsa"></div>
+            <div class="box"><img class="partnershipLogo" src="~/Content/Perfiles Images/Partners/El siglo.png" alt="Logo El Siglo"></div>
+            <div class="box"><img class="partnershipLogo" src="~/Content/Perfiles Images/Partners/Otek.png" alt="Logo Otek"></div>
+            <div class="box"><img class="partnershipLogo" src="~/Content/Perfiles Images/Partners/Terra.png" alt="Logo Terra"></div>
+            <div class="box"><img class="partnershipLogo" src="~/Content/Perfiles Images/Partners/Weknow.png" alt="Logo Weknow"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- #endregion -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const moveContainerClients = document.querySelector('.sectionClients .moveClients');
+        const totalWidthClients = moveContainerClients.scrollWidth;
+        const containerWidthClients = moveContainerClients.offsetWidth;
+        let positionClients = 0;
+        let directionClients = -1;
+        const scrollSpeed = 4;
+
+        function scrollClients() {
+            positionClients += scrollSpeed * directionClients;
+            if (positionClients <= -totalWidthClients + containerWidthClients) {
+                directionClients = 1;
+            } else if (positionClients >= 0) {
+                directionClients = -1;
+            }
+            moveContainerClients.style.transform = `translateX(${positionClients}px)`;
+            requestAnimationFrame(scrollClients);
+        }
+
+        scrollClients();
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const moveContainerPartners = document.querySelector('.sectionPartners .move');
+        const totalWidthPartners = moveContainerPartners.scrollWidth;
+        const containerWidthPartners = moveContainerPartners.offsetWidth;
+        let positionPartners = 0;
+        let directionPartners = -1;
+        const scrollSpeed = 3;
+
+        function scrollPartnership() {
+            positionPartners += scrollSpeed * directionPartners;
+            if (positionPartners <= -totalWidthPartners + containerWidthPartners) {
+                directionPartners = 1;
+            } else if (positionPartners >= 0) {
+                directionPartners = -1;
+            }
+            moveContainerPartners.style.transform = `translateX(${positionPartners}px)`;
+            requestAnimationFrame(scrollPartnership);
+        }
+
+        scrollPartnership();
+    });
+
+</script>
+
+<script src="~/Content/js/Perfiles.js"></script>

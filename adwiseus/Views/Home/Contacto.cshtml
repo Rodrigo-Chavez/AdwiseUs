@@ -1,0 +1,81 @@
+﻿@model adwiseus.Models.EmailSendingResult
+@using System.Globalization
+@using adwiseus.App_GlobalResources
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<link rel="stylesheet" href="~/Content/css/Contacto.css" asp-append-version="true" />
+<script src="~/js/Contacto.js" asp-append-version="true"></script>
+
+<div class="d-flex justify-content-center align-items-center img-container position-relative ">
+    <h1 class="display-4 text-white fw-bold text-header">Contacto</h1>
+    <div class="bg-black bg-opacity-25 w-100 h-100 position-absolute">
+    </div>
+</div>
+
+@if (Model != null && Model.Success)
+{
+    <div class="container text-blue p-3 p-lg-5 pb-lg-2">
+        <h2>@Resources.contacto_rta_exito_h2</h2>
+        <p>@Resources.contacto_rta_exito_p</p>
+        <ul>
+            <li><strong>@Resources.contacto_rta_exito_li1</strong> @Model.InputName</li>
+            <li><strong>@Resources.contacto_rta_exito_li2</strong> @Model.InputEmail</li>
+            <li><strong>@Resources.contacto_rta_exito_li3</strong> @Model.InputMessage</li>
+        </ul>
+    </div>
+}
+@if (Model != null && !Model.Success)
+{
+    <div class="container py-4">
+        <div class="alert alert-danger" role="alert">
+            @Resources.contacto_rta_error  <label class="text-secondary" style="user-select:all">sales@adwise.us</label>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container text-blue p-3 p-lg-5 pb-lg-2">
+        <p>@Resources.contacto_p1</p>
+        <p>@Resources.contacto_p2</p>
+        <p>@Resources.contacto_p3</p>
+        <p>@Resources.contacto_p4</p>
+        <p>@Resources.contacto_p5</p>
+        <p>@Resources.contacto_p6</p>
+        <p>
+            @Resources.contacto_p7
+        </p>
+        <p>
+            @Resources.contacto_p8
+        </p>
+        <p>
+            @Resources.contacto_p9
+        </p>
+        <p>
+            @Resources.contacto_p10
+        </p>
+        <p>@Resources.contacto_p11</p>
+    </div>
+    <div class="container p-3 p-lg-5 pt-lg-3">
+        <form id="contactForm" action="/Home/SendContactForm" method="post">
+            <div class="mb-3">
+                <label for="InputName" class="form-label text-form">@Resources.contacto_form_name<label class="text-danger">*</label></label>
+                <input type="text" class="form-control input-adwise" id="InputName" name="InputName" maxlength="50">
+                <div class="invalid-feedback" id="nameError"></div>
+            </div>
+            <div class="mb-3">
+                <label for="InputEmail" class="form-label text-form">@Resources.contacto_form_email <label class="text-danger">*</label></label>
+                <input type="email" class="form-control input-adwise" id="InputEmail" name="InputEmail" aria-describedby="emailHelp" maxlength="254">
+                <div class="invalid-feedback" id="emailError"></div>
+            </div>
+            <div class="mb-3">
+                <label for="InputMessage" class="form-label text-form">@Resources.contacto_form_message <label class="text-danger">*</label></label>
+                <textarea class="form-control input-adwise" id="InputMessage" name="InputMessage" maxlength="1000"></textarea>
+                <div class="invalid-feedback" id="messageError"></div>
+            </div>
+            <button type="submit" class="btn btn-primary button-adwise">@Resources.contacto_form_button ⭢</button>
+        </form>
+    </div>
+
+}

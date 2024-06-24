@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adwise_title" xml:space="preserve">
+    <value>Pronto más información sobre Adwise University</value>
+  </data>
+  <data name="contacto_form_button" xml:space="preserve">
+    <value>Comunicate con nosotros</value>
+  </data>
+  <data name="contacto_form_email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="contacto_form_message" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="contacto_form_name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="contacto_p1" xml:space="preserve">
+    <value>¡Gracias por visitar la página de Adwise Corporate Advisory!</value>
+  </data>
+  <data name="contacto_p10" xml:space="preserve">
+    <value>+1 786-220-3758</value>
+  </data>
+  <data name="contacto_p11" xml:space="preserve">
+    <value>Esperamos tener la oportunidad de trabajar contigo y ayudarte a alcanzar tus objetivos empresariales. ¡Contáctanos hoy mismo!</value>
+  </data>
+  <data name="contacto_p2" xml:space="preserve">
+    <value>En Adwise Corporate Advisory estamos comprometidos con brindar un excelente servicio al cliente y una asesoría de primera calidad. Si tienes alguna pregunta, inquietud o comentario, no dudes en ponerte en contacto con nosotros.</value>
+  </data>
+  <data name="contacto_p3" xml:space="preserve">
+    <value>Para hacerlo, puedes completar el formulario de contacto que se encuentra en nuestra página web. Simplemente ingresa tu nombre, dirección de correo electrónico y un mensaje detallado, y uno de nuestros expertos en asesoramiento corporativo te responderá lo antes posible.</value>
+  </data>
+  <data name="contacto_p4" xml:space="preserve">
+    <value>También puedes comunicarte con nosotros a través de nuestros números telefónicos.</value>
+  </data>
+  <data name="contacto_p5" xml:space="preserve">
+    <value>San José, Costa Rica</value>
+  </data>
+  <data name="contacto_p6" xml:space="preserve">
+    <value>+506 61264151</value>
+  </data>
+  <data name="contacto_p7" xml:space="preserve">
+    <value>Ciudad de Panamá, Panamá</value>
+  </data>
+  <data name="contacto_p8" xml:space="preserve">
+    <value>+507 63062254</value>
+  </data>
+  <data name="contacto_p9" xml:space="preserve">
+    <value>Miami, FL. USA</value>
+  </data>
+  <data name="contacto_rta_error" xml:space="preserve">
+    <value>Lo sentimos, ha ocurrido un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde o contáctanos directamente a través de nuestro correo electrónico</value>
+  </data>
+  <data name="contacto_rta_exito_h2" xml:space="preserve">
+    <value>¡Tu mensaje ha sido enviado con éxito!</value>
+  </data>
+  <data name="contacto_rta_exito_li1" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="contacto_rta_exito_li2" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="contacto_rta_exito_li3" xml:space="preserve">
+    <value>Mensaje:</value>
+  </data>
+  <data name="contacto_rta_exito_p" xml:space="preserve">
+    <value>A continuación, se muestran los detalles del mensaje:</value>
+  </data>
+  <data name="finance_descr" xml:space="preserve">
+    <value>Son áreas esenciales de la gestión empresarial encargadas de la gestión financiera, el control financiero y la evaluación independiente de la situación financiera de una empresa. Las finanzas incluyen la planificación financiera, la gestión de presupuestos y tesorería, la inversión y financiación, y la preparación de informes financieros, mientras que la auditoría se enfoca en la revisión y evaluación independiente de los estados financieros de la empresa. Ambas áreas son fundamentales para garantizar la sostenibilidad y salud financiera de la empresa.</value>
+  </data>
+  <data name="finance_h1" xml:space="preserve">
+    <value>Finance Audit</value>
+  </data>
+  <data name="finance_h2_1" xml:space="preserve">
+    <value>Resources Management Insights</value>
+  </data>
+  <data name="finance_h2_2" xml:space="preserve">
+    <value>Audit Best Practices</value>
+  </data>
+  <data name="finance_h2_3" xml:space="preserve">
+    <value>Financial Information Management</value>
+  </data>
+  <data name="finance_h2_4" xml:space="preserve">
+    <value>Expertise Delivery Center</value>
+  </data>
+  <data name="finance_h2_5" xml:space="preserve">
+    <value>Compliance Analysis Review</value>
+  </data>
+  <data name="finance_p_1" xml:space="preserve">
+    <value>Servicios integrados en asesoría financiera y contable enfocados en el mejoramiento de la gestión financiera</value>
+  </data>
+  <data name="finance_p_2" xml:space="preserve">
+    <value>Metodologías para la evaluación independiente y sistemática de la información y los procesos financieros y administrativos</value>
+  </data>
+  <data name="finance_p_3" xml:space="preserve">
+    <value>Sistemas de integración, consolidación y de la información financiera para múltiples negocios, contables y territoriales</value>
+  </data>
+  <data name="finance_p_4" xml:space="preserve">
+    <value>Estrategias para la innovación y optimización de los recursos y procesos comunes, afianzando la efectividad y competitividad operativa</value>
+  </data>
+  <data name="finance_p_5" xml:space="preserve">
+    <value>Programas para la evaluación especializada del cumplimiento de disposiciones específicas y la efectividad del sistema de control interno</value>
+  </data>
+  <data name="indexArea_descr" xml:space="preserve">
+    <value>Adwise se especializa en diferentes áreas de negocio, entre las que se incluyen la gestión del talento, la innovación de procesos, las finanzas y la auditoría, y el outsourcing. Cada una de estas áreas es importante para el éxito y la competitividad a largo plazo de una empresa.</value>
+  </data>
+  <data name="indexArea_h1" xml:space="preserve">
+    <value>Áreas De Especialidad</value>
+  </data>
+  <data name="indexArea_h2_1" xml:space="preserve">
+    <value>Talent Management</value>
+  </data>
+  <data name="indexArea_h2_2" xml:space="preserve">
+    <value>Process Innovation</value>
+  </data>
+  <data name="indexArea_h2_3" xml:space="preserve">
+    <value>Finance&amp;Audit</value>
+  </data>
+  <data name="indexArea_h2_4" xml:space="preserve">
+    <value>Outsourcing</value>
+  </data>
+  <data name="indexArea_p_1" xml:space="preserve">
+    <value>Se enfoca en atraer, desarrollar, motivar y retener a empleados altamente calificados y comprometidos para contribuir al éxito de la empresa.</value>
+  </data>
+  <data name="indexArea_p_2" xml:space="preserve">
+    <value>Se refiere a la mejora de procesos empresariales para aumentar la eficiencia, productividad y calidad de los productos o servicios ofrecidos.</value>
+  </data>
+  <data name="indexArea_p_3" xml:space="preserve">
+    <value>Las finanzas y la auditoría son fundamentales para garantizar la sostenibilidad y salud financiera de la empresa.</value>
+  </data>
+  <data name="indexArea_p_4" xml:space="preserve">
+    <value>Se utiliza para reducir costos, mejorar la eficiencia y acceder a habilidades especializadas.</value>
+  </data>
+  <data name="index_buttonHeader" xml:space="preserve">
+    <value>más información</value>
+  </data>
+  <data name="index_buttonText" xml:space="preserve">
+    <value>ver mas</value>
+  </data>
+  <data name="index_card1Content" xml:space="preserve">
+    <value>Como empresa de consultoría, nos enfocamos en ofrecer soluciones innovadoras y personalizadas para ayudar a nuestros clientes a alcanzar sus objetivos comerciales. Aquí presentamos algunos de nuestros casos de éxito más destacados.</value>
+  </data>
+  <data name="index_card1Title" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+  <data name="index_card2Content" xml:space="preserve">
+    <value>Adwise University es un Centro de Formación de Alto Nivel Ejecutivo que ofrece una oferta académica enfocada en la implementación exitosa de la Transformación Digital en Gobiernos, Entidades Financieras y Organismos de Cooperación Internacional. Con nosotros obtendrás una formación de alta calidad para liderar el cambio hacia un futuro más digital y eficiente en tu organización.</value>
+  </data>
+  <data name="index_card2Title" xml:space="preserve">
+    <value>Adwise University</value>
+  </data>
+  <data name="index_PHeader" xml:space="preserve">
+    <value>Consultoría especializada en Educación, Gestión del Capital Humano, Innovación, Desarrollo Organizacional, Gestión del Cambio, Tercerización y Programas para el Desarrollo del Talento</value>
+  </data>
+  <data name="nav_areas" xml:space="preserve">
+    <value>Áreas de Especialidad</value>
+  </data>
+  <data name="nav_contacto" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="nav_inicio" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="nav_nosotros" xml:space="preserve">
+    <value>Nosotros</value>
+  </data>
+  <data name="nav_perfiles" xml:space="preserve">
+    <value>Perfiles</value>
+  </data>
+  <data name="nosotros_CEO" xml:space="preserve">
+    <value>CEO</value>
+  </data>
+  <data name="nosotros_crecimiento_li1" xml:space="preserve">
+    <value>Es buscar el crecimiento como personas y como profesionales.</value>
+  </data>
+  <data name="nosotros_crecimiento_li2" xml:space="preserve">
+    <value>Es generar un ambiente laboral que permita sentirnos felices y realizados en cada día de trabajo.</value>
+  </data>
+  <data name="nosotros_crecimiento_li3" xml:space="preserve">
+    <value>Implica mejorar continuamente las condiciones laborales.</value>
+  </data>
+  <data name="nosotros_crecimiento_li4" xml:space="preserve">
+    <value>Implica estar comprometidos.</value>
+  </data>
+  <data name="nosotros_crecimiento_title" xml:space="preserve">
+    <value>CRECIMIENTO PERSONAL</value>
+  </data>
+  <data name="nosotros_ejecucion_li1" xml:space="preserve">
+    <value>Es hacer que las cosas sucedan.</value>
+  </data>
+  <data name="nosotros_ejecucion_li2" xml:space="preserve">
+    <value>Es ir siempre un paso más allá.</value>
+  </data>
+  <data name="nosotros_ejecucion_li3" xml:space="preserve">
+    <value>Implica estar enfocados en el cliente.</value>
+  </data>
+  <data name="nosotros_ejecucion_li4" xml:space="preserve">
+    <value>Implica ser efectivos.</value>
+  </data>
+  <data name="nosotros_ejecucion_li5" xml:space="preserve">
+    <value>Implica estar comprometidos.</value>
+  </data>
+  <data name="nosotros_ejecucion_title" xml:space="preserve">
+    <value>EJECUCIÓN</value>
+  </data>
+  <data name="nosotros_excelencia_li1" xml:space="preserve">
+    <value>Es hacer las cosas bien desde la primera vez.</value>
+  </data>
+  <data name="nosotros_excelencia_li2" xml:space="preserve">
+    <value>Implica trabajo en equipo.</value>
+  </data>
+  <data name="nosotros_excelencia_li3" xml:space="preserve">
+    <value>Implica ser eficientes.</value>
+  </data>
+  <data name="nosotros_excelencia_li4" xml:space="preserve">
+    <value>Implica superar las expectativas del cliente.</value>
+  </data>
+  <data name="nosotros_excelencia_li5" xml:space="preserve">
+    <value>Implica estar comprometidos.</value>
+  </data>
+  <data name="nosotros_excelencia_title" xml:space="preserve">
+    <value>EXCELENCIA</value>
+  </data>
+  <data name="nosotros_Max1" xml:space="preserve">
+    <value>Max Santamaría Gutiérrez es el CEO y Senior Partner de ADWISE Corporate Advisory para Latinoamérica, con más de 20 años de experiencia en el mercado, es psicólogo graduado de la Universidad de Costa Rica y ha obtenido especializaciones en Negociación, Entrenamiento en Educación para el Desarrollo Humano y Asesoramiento Internacional en Psicología de los Procesos Grupales.</value>
+  </data>
+  <data name="nosotros_Max2" xml:space="preserve">
+    <value>Ha desarrollado investigaciones en áreas como Artificial Intelligence, Human Resources Scorecard, Desarrollo Corporativo, Transformación Digital, Leadership Awareness, Inteligencia Emocional, Sistemas de Gestión para la Productividad y Programación Neurolingüística en las organizaciones.</value>
+  </data>
+  <data name="nosotros_Max3" xml:space="preserve">
+    <value>Ha trabajado como consultor en América Latina para empresas de diferentes rubros y clústeres de negocio, incluyendo consumo masivo, petróleo, empaque, agroindustria, servicios, banca, tecnología, construcción, manufactura, exportación, seguridad, trading, ONG´s, desarrollo inmobiliario y muchas otras.</value>
+  </data>
+  <data name="nosotros_mision_descr" xml:space="preserve">
+    <value>Proveemos soluciones integrales de asesoría en negocios con enfoque en rentabilidad.</value>
+  </data>
+  <data name="nosotros_mision_title" xml:space="preserve">
+    <value>Misión</value>
+  </data>
+  <data name="nosotros_p_moreProyects" xml:space="preserve">
+    <value>"Conoce más sobre nuestros proyectos"</value>
+  </data>
+  <data name="nosotros_rentabilidad_li1" xml:space="preserve">
+    <value>Es enfocarse en resultados y no en actividades.</value>
+  </data>
+  <data name="nosotros_rentabilidad_li2" xml:space="preserve">
+    <value>Es ser efectivos y eficientes.</value>
+  </data>
+  <data name="nosotros_rentabilidad_li3" xml:space="preserve">
+    <value>Es hacer más con la menor cantidad de recursos.</value>
+  </data>
+  <data name="nosotros_rentabilidad_li4" xml:space="preserve">
+    <value>Implica estar comprometidos.</value>
+  </data>
+  <data name="nosotros_rentabilidad_title" xml:space="preserve">
+    <value>RENTABILIDAD</value>
+  </data>
+  <data name="nosotros_responsabilidad_h1" xml:space="preserve">
+    <value>RESPONSABILIDAD SOCIAL CORPORATIVA</value>
+  </data>
+  <data name="nosotros_timeline_1" xml:space="preserve">
+    <value>Fundación de Adwise</value>
+  </data>
+  <data name="nosotros_timeline_2" xml:space="preserve">
+    <value>Ampliación de soluciones</value>
+  </data>
+  <data name="nosotros_timeline_3" xml:space="preserve">
+    <value>Transnacionales en Centroamérica y el Caribe</value>
+  </data>
+  <data name="nosotros_timeline_4" xml:space="preserve">
+    <value>Sucursal en Bogotá, Colombia</value>
+  </data>
+  <data name="nosotros_timeline_5" xml:space="preserve">
+    <value>Nuevos consultores y directores</value>
+  </data>
+  <data name="nosotros_timeline_6" xml:space="preserve">
+    <value>Marca Adwise</value>
+  </data>
+  <data name="nosotros_timeline_7" xml:space="preserve">
+    <value>Consolidación de unidad de outsourcing</value>
+  </data>
+  <data name="nosotros_timeline_8" xml:space="preserve">
+    <value>Casa Matriz</value>
+  </data>
+  <data name="nosotros_timeline_button" xml:space="preserve">
+    <value>ver más</value>
+  </data>
+  <data name="nosotros_Title" xml:space="preserve">
+    <value>Nosotros</value>
+  </data>
+  <data name="nosotros_Title2" xml:space="preserve">
+    <value>Información de la Empresa</value>
+  </data>
+  <data name="nosotros_transparencia_li1" xml:space="preserve">
+    <value>Es ser éticos y leales con nuestros clientes, colaboradores, proveedores, aliados y con nuestra empresa.</value>
+  </data>
+  <data name="nosotros_transparencia_li2" xml:space="preserve">
+    <value>Implica comunicación abierta entre colaboradores.</value>
+  </data>
+  <data name="nosotros_transparencia_li3" xml:space="preserve">
+    <value>Implica estar comprometidos.</value>
+  </data>
+  <data name="nosotros_transparencia_title" xml:space="preserve">
+    <value>TRANSPARENCIA</value>
+  </data>
+  <data name="nosotros_vision_descr" xml:space="preserve">
+    <value>Seremos los principales aliados estratégicos de nuestros clientes.</value>
+  </data>
+  <data name="nosotros_vision_title" xml:space="preserve">
+    <value>Visión</value>
+  </data>
+  <data name="outsourcing_descr" xml:space="preserve">
+    <value>Es la contratación de una empresa externa para realizar tareas o funciones empresariales que normalmente se llevan a cabo dentro de la organización. Se puede aplicar a una amplia gama de áreas, como contabilidad, marketing, soporte técnico y gestión de recursos humanos. Las empresas lo usan para reducir costos, mejorar la eficiencia y acceder a habilidades especializadas. Sin embargo, también puede haber desventajas, como la pérdida de control y la falta de calidad del trabajo. En general, el outsourcing es una práctica empresarial que tiene pros y contras.</value>
+  </data>
+  <data name="outsourcing_h1" xml:space="preserve">
+    <value>Outsourcing</value>
+  </data>
+  <data name="outsourcing_h2_1" xml:space="preserve">
+    <value>Talent Workforce Outsourcing</value>
+  </data>
+  <data name="outsourcing_h2_2" xml:space="preserve">
+    <value>Information Tech &amp; Mobile Development</value>
+  </data>
+  <data name="outsourcing_h2_3" xml:space="preserve">
+    <value>Payroll Management</value>
+  </data>
+  <data name="outsourcing_h2_4" xml:space="preserve">
+    <value>Smart Process Outsourcing</value>
+  </data>
+  <data name="outsourcing_h2_5" xml:space="preserve">
+    <value>Turn Key Deriverables</value>
+  </data>
+  <data name="outsourcing_p_1" xml:space="preserve">
+    <value>Servicios de tercerización de personal, temporal o permanente</value>
+  </data>
+  <data name="outsourcing_p_2" xml:space="preserve">
+    <value>Desarrollo de aplicaciones tecnológicas de última generación para la productividad</value>
+  </data>
+  <data name="outsourcing_p_3" xml:space="preserve">
+    <value>Procesamiento administrativo y atención de clientes en nóminas tercerizadas</value>
+  </data>
+  <data name="outsourcing_p_4" xml:space="preserve">
+    <value>Servicios de administración y ejecución de funciones no medulares para el negocio de nuestros clientes</value>
+  </data>
+  <data name="outsourcing_p_5" xml:space="preserve">
+    <value>Solución que asegura entregables de paquete completo » end to end» de conformidad con un Acuerdo de Nivel de Servicio</value>
+  </data>
+  <data name="perfiles_clients_h2" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="perfiles_descr" xml:space="preserve">
+    <value>Bienvenidos a nuestra sección donde mostramos algunos de nuestros proyectos. Aquí presentamos algunos de nuestros casos de éxito más destacados. Como empresa de consultoría, nos enfocamos en ofrecer soluciones innovadoras y personalizadas para ayudar a nuestros clientes a alcanzar sus objetivos comerciales. Nuestro equipo altamente capacitado está comprometido en brindar resultados excepcionales y satisfacción al cliente.</value>
+  </data>
+  <data name="perfiles_h1" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+  <data name="perfiles_proyecto_1" xml:space="preserve">
+    <value>Proyecto BAC SANJOSE</value>
+  </data>
+  <data name="perfiles_proyecto_1_li1" xml:space="preserve">
+    <value>Gestionar el reclutamiento y entrenamiento de 100 Ejecutivos Senior de Servicios.</value>
+  </data>
+  <data name="perfiles_proyecto_1_li2" xml:space="preserve">
+    <value>Programa de 3 meses.</value>
+  </data>
+  <data name="perfiles_proyecto_2" xml:space="preserve">
+    <value>Proyecto PIZZA HUT CR</value>
+  </data>
+  <data name="perfiles_proyecto_2_li1" xml:space="preserve">
+    <value>Ahorros de $250.000 en el macroproceso de Cadena de Abastecimiento (logística – comercial).</value>
+  </data>
+  <data name="perfiles_proyecto_2_li2" xml:space="preserve">
+    <value>Programa de 6 meses.</value>
+  </data>
+  <data name="perfiles_proyecto_3" xml:space="preserve">
+    <value>Proyecto TETRA PAK SOUTHERN CONE</value>
+  </data>
+  <data name="perfiles_proyecto_3_li1" xml:space="preserve">
+    <value>Transformación de la Estrategia Comercial en proceso de integración de Argentina, Chile &amp; Uruguay.</value>
+  </data>
+  <data name="perfiles_proyecto_3_li2" xml:space="preserve">
+    <value>Programa de 1 año.</value>
+  </data>
+  <data name="perfiles_proyecto_4" xml:space="preserve">
+    <value>Proyecto KATTAN GROUP</value>
+  </data>
+  <data name="perfiles_proyecto_4_li1" xml:space="preserve">
+    <value>Estrategia de Alineamiento y Gestión de Capital Humano de para grupo empresarial de 4.000 empleados en Honduras, 2010.</value>
+  </data>
+  <data name="perfiles_proyecto_4_li2" xml:space="preserve">
+    <value>Proyecto de 2 meses.</value>
+  </data>
+  <data name="perfiles_proyecto_5" xml:space="preserve">
+    <value>Proyecto BANK OF AMERICA</value>
+  </data>
+  <data name="perfiles_proyecto_5_li1" xml:space="preserve">
+    <value>El liderar la transición estratégica, Costa Rica + Mex 2010.</value>
+  </data>
+  <data name="perfiles_proyecto_5_li2" xml:space="preserve">
+    <value>Programa de 9 meses.</value>
+  </data>
+  <data name="perfiles_proyecto_6" xml:space="preserve">
+    <value>Proyecto HSBC Panamá</value>
+  </data>
+  <data name="perfiles_proyecto_6_li1" xml:space="preserve">
+    <value>Rediseño del modelo de gestión del talento, con reorganizaciones (fortalecimiento) del área comercial movilizando más de 80 personas mensualmente.</value>
+  </data>
+  <data name="perfiles_proyecto_6_li2" xml:space="preserve">
+    <value>Programa de 1 año.</value>
+  </data>
+  <data name="processInovation_descr" xml:space="preserve">
+    <value>Process Innovation, o innovación de procesos, se refiere a la creación o mejora de procesos empresariales para aumentar la eficiencia, productividad y calidad de los productos o servicios ofrecidos. Implica reorganizar tareas, implementar nuevas tecnologías, mejorar la capacitación y eliminar procesos innecesarios para mejorar la satisfacción del cliente, reducir costos y mejorar la adaptabilidad al cambio de mercado. La innovación de procesos es importante para mantener la competitividad y sostenibilidad a largo plazo, mejorar la eficiencia y reducir costos empresariales.</value>
+  </data>
+  <data name="processInovation_h1" xml:space="preserve">
+    <value>Process Innovation</value>
+  </data>
+  <data name="processInovation_h2_1" xml:space="preserve">
+    <value>Standar Execution Programs</value>
+  </data>
+  <data name="processInovation_h2_2" xml:space="preserve">
+    <value>Project Management Solutions</value>
+  </data>
+  <data name="processInovation_h2_3" xml:space="preserve">
+    <value>Indicator Model Design</value>
+  </data>
+  <data name="processInovation_h2_4" xml:space="preserve">
+    <value>Performance Alignment &amp; Strategy</value>
+  </data>
+  <data name="processInovation_h2_5" xml:space="preserve">
+    <value>Savings &amp; Costs Reduction Strategy</value>
+  </data>
+  <data name="processInovation_p_1" xml:space="preserve">
+    <value>Sistema de mejora continua enfocados hacia la estandarización de conformidad con normas internacionales</value>
+  </data>
+  <data name="processInovation_p_2" xml:space="preserve">
+    <value>Metodología para la planeación, dirección y control de proyectos mediante un sistema de ejecución de conformidad con el PMI</value>
+  </data>
+  <data name="processInovation_p_3" xml:space="preserve">
+    <value>Diseño e implementación de sistemas de información gerencial para la toma de decisiones</value>
+  </data>
+  <data name="processInovation_p_4" xml:space="preserve">
+    <value>Programas de administración del cambio para el alineamiento del desempeño y la estrategia</value>
+  </data>
+  <data name="processInovation_p_5" xml:space="preserve">
+    <value>Programa para la generación de rentabilidad mediante la optimización de procesos, reducción de costos y mejora de eficiencias</value>
+  </data>
+  <data name="talentManagement_descr" xml:space="preserve">
+    <value>Talent Management es el conjunto de prácticas y procesos utilizados por las organizaciones para atraer, desarrollar, motivar y retener a empleados altamente calificados y comprometidos que contribuyan significativamente al éxito de la empresa. Las empresas que implementan una estrategia efectiva de gestión del talento son más propensas a retener y atraer a los mejores talentos, mejorar el rendimiento general y mantenerse competitivas a largo plazo en un mercado cambiante.</value>
+  </data>
+  <data name="talentManagement_h1" xml:space="preserve">
+    <value>Talent Management</value>
+  </data>
+  <data name="talentManagement_h2_1" xml:space="preserve">
+    <value>Executive Search</value>
+  </data>
+  <data name="talentManagement_h2_2" xml:space="preserve">
+    <value>360 Perspective Analysis</value>
+  </data>
+  <data name="talentManagement_h2_3" xml:space="preserve">
+    <value>Competence Measurement System</value>
+  </data>
+  <data name="talentManagement_h2_4" xml:space="preserve">
+    <value>Leadership Aceleration Program</value>
+  </data>
+  <data name="talentManagement_h2_5" xml:space="preserve">
+    <value>Five Steps For Performance</value>
+  </data>
+  <data name="talentManagement_p" xml:space="preserve">
+    <value>Sistema de reclutamiento basado en competencias e indicadores de gestión</value>
+  </data>
+  <data name="talentManagement_p_2" xml:space="preserve">
+    <value>Programa de medición de la satisfacción laboral y de la opinión de públicos interesados para el cambio</value>
+  </data>
+  <data name="talentManagement_p_3" xml:space="preserve">
+    <value>Sistema de evaluación para identificar brechas de competencias de una persona versus el puesto</value>
+  </data>
+  <data name="talentManagement_p_4" xml:space="preserve">
+    <value>Asesoría personalizada en el desarrollo de competencias para mejorar el desempeño</value>
+  </data>
+  <data name="talentManagement_p_5" xml:space="preserve">
+    <value>Programa de entrenamiento compuesto por cinco niveles de ejecución del método SMART</value>
+  </data>
+  <data name="timeline_2006_h2" xml:space="preserve">
+    <value>Fundación de Adwise</value>
+  </data>
+  <data name="timeline_2006_h3" xml:space="preserve">
+    <value>2006</value>
+  </data>
+  <data name="timeline_2006_text" xml:space="preserve">
+    <value>La firma comenzó en el 2006 con oficinas en Costa Rica y un enfoque en soluciones de capital humano para la región.</value>
+  </data>
+  <data name="timeline_2008_h2" xml:space="preserve">
+    <value>Ampliación de soluciones</value>
+  </data>
+  <data name="timeline_2008_h3" xml:space="preserve">
+    <value>2008</value>
+  </data>
+  <data name="timeline_2008_text" xml:space="preserve">
+    <value>En 2008, la empresa comenzó a ofrecer nuevas soluciones en otras áreas de negocio, específicamente en el campo de la optimización de procesos. Abrió sus primeras oficinas fuera de Costa Rica en Panamá y Trinidad y Tobago, se implementó un entrenamiento de alto nivel para el SM JALEEL en Trinidad y Tobago, compartió otras iniciativas de coaching en República Dominicana.</value>
+  </data>
+  <data name="timeline_2009_h2" xml:space="preserve">
+    <value>Transnacionales en Centroamérica y el Caribe</value>
+  </data>
+  <data name="timeline_2009_h3" xml:space="preserve">
+    <value>2009</value>
+  </data>
+  <data name="timeline_2009_text" xml:space="preserve">
+    <value>En 2009, la firma se centró en empresas transnacionales en Centroamérica y el Caribe y diseñó la estrategia que llevó a TETRA PAK Centroamérica &amp; Caribe a ganar el premio mundial «Market Region of the Year 2008».</value>
+  </data>
+  <data name="timeline_2010.5_h2" xml:space="preserve">
+    <value>Nuevos consultores y directores</value>
+  </data>
+  <data name="timeline_2010.5_h3" xml:space="preserve">
+    <value>2010</value>
+  </data>
+  <data name="timeline_2010.5_text" xml:space="preserve">
+    <value>La firma incorporó nuevos consultores y directores en 2010 y logró concluir un proyecto de optimización con ahorros significativos en la cadena de abastecimiento para TETRA PAK en Panamá.</value>
+  </data>
+  <data name="timeline_2010_h2" xml:space="preserve">
+    <value>Sucursal en Bogotá, Colombia</value>
+  </data>
+  <data name="timeline_2010_h3" xml:space="preserve">
+    <value>2010</value>
+  </data>
+  <data name="timeline_2010_text" xml:space="preserve">
+    <value>En 2010, la firma abrió una sucursal en Bogotá, Colombia y se incorporó la división de calidad, desarrollando nuevas soluciones de negocio en cada una de sus áreas de especialización. También comenzó a trabajar con Scotiabank en Panamá y Costa Rica en proyectos de outsourcing y headhunting.</value>
+  </data>
+  <data name="timeline_2011_h2" xml:space="preserve">
+    <value>Marca Adwise</value>
+  </data>
+  <data name="timeline_2011_h3" xml:space="preserve">
+    <value>2011</value>
+  </data>
+  <data name="timeline_2011_text" xml:space="preserve">
+    <value>En el 2011, la Firma comienza a operar bajo la marca ADWISE fortaleciendo y diversificando sus soluciones, de conformidad con las necesidades del mercado y expandiendo su presencia física hacia Centroamérica, Suramérica y el Caribe mediante oficinas de representación y un centro de operaciones comerciales en Miami Fl.</value>
+  </data>
+  <data name="timeline_2013_h2" xml:space="preserve">
+    <value>Consolidación de unidad de outsourcing</value>
+  </data>
+  <data name="timeline_2013_h3" xml:space="preserve">
+    <value>2013</value>
+  </data>
+  <data name="timeline_2013_text" xml:space="preserve">
+    <value>En el año 2013, ADWISE es adjudicada por Scotiabank Costa Rica para implementar exitosamente un proyecto de Outsourcing administrando más de 60 recursos para el banco y asume proyectos de Planillas Administradas para SCOTIABANK en Panamá y Costa Rica.</value>
+  </data>
+  <data name="timeline_2015_h2" xml:space="preserve">
+    <value>Casa Matriz</value>
+  </data>
+  <data name="timeline_2015_h3" xml:space="preserve">
+    <value>2015</value>
+  </data>
+  <data name="timeline_2015_text" xml:space="preserve">
+    <value>A partir del año 2015, se reubica la Casa Matriz de la Firma en Ciudad de Panamá, ubicando su Expertise Delivery Center. En el corto y mediano plazo la firma continuará fortaleciendo y diversificando sus soluciones, de conformidad con las necesidades del mercado y expandiendo su presencia física hacia Centroamérica, Suramérica y el Caribe. Actualmente la Firma cuenta con socios en América Latina, Estados Unidos &amp; España.</value>
+  </data>
+</root>

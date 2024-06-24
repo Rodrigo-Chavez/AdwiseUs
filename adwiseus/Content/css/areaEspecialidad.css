@@ -1,0 +1,52 @@
+﻿.img-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 430px;
+    font-size: 45px;
+}
+.text-header {
+    z-index: 2;
+}
+
+
+    .img-container h1 {
+        font-weight: 500;
+    }
+
+.img-container1 {
+    background-image: url("../Images/lerone-pieters-NiGih6G7nlM-unsplash-1.jpg");
+    background-attachment: fixed;
+}
+.img-container2 {
+    background-image: url("../Images/img-talent-managment.jpg");
+}
+.img-container3 {
+    background-image: url("../Images/img-process-inovation.png");
+}
+.img-container4 {
+    background-image: url("../Images/img-Finance-Audit.png");
+}
+.img-container5 {
+    background-image: url("../Images/Outsourcing.png");
+}
+
+
+.box-text {
+    border: solid 1px #1d3562;
+    padding: 48px 32px;
+    
+}
+.box-text p {
+    font-size: 21px !important;
+}
+
+.link{
+    text-decoration:underline;
+    color:white
+
+}
+
+    .link:hover {
+        color: #1d3562;
+    }

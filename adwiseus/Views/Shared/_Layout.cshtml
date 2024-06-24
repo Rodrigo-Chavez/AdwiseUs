@@ -1,39 +1,218 @@
-﻿<!DOCTYPE html>
+﻿
+@using System.Globalization
+@using adwiseus.App_GlobalResources
+@{
+    var currentCulture = System.Threading.Thread.CurrentThread.CurrentCulture.Name;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/css/site.css" asp-append-version="true" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Content/favicon.png">
+    <script src="~/Content/js/scrollreveal.js"></script>
+    <style>
+
+        /* switch settings 👇 */
+
+        .ui-switch {
+            /* switch */
+            --switch-bg: rgb(135, 150, 165);
+            --switch-width: 48px;
+            --switch-height: 20px;
+            /* circle */
+            --circle-diameter: 30px;
+            --circle-bg: rgb(0, 56, 146);
+            --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);
+        }
+
+            .ui-switch input {
+                display: none;
+            }
+
+        .slider {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: var(--switch-width);
+            height: var(--switch-height);
+            background: var(--switch-bg);
+            border-radius: 999px;
+            position: relative;
+            cursor: pointer;
+        }
+
+            .slider .circle {
+                top: calc(var(--circle-inset) * -1);
+                left: 0;
+                width: var(--circle-diameter);
+                height: var(--circle-diameter);
+                position: absolute;
+                background: var(--circle-bg);
+                border-radius: inherit;
+                background-image: url("../../Content/Images/uk-icon.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                -webkit-transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                -o-transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+
+            }
+
+                .slider .circle::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.75);
+                    border-radius: inherit;
+                    -webkit-transition: all 500ms;
+                    -o-transition: all 500ms;
+                    transition: all 500ms;
+                    opacity: 0;
+                }
+
+        /* actions */
+
+        .ui-switch input:checked + .slider .circle {
+            left: calc(100% - var(--circle-diameter));
+            background-image: url("../../Content/Images/spain-icon.png");
+        }
+
+        .ui-switch input:active + .slider .circle::before {
+            -webkit-transition: 0s;
+            -o-transition: 0s;
+            transition: 0s;
+            opacity: 1;
+            width: 0;
+            height: 0;
+        }
+
+
+
+           
+
+    </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
+<body class="d-flex flex-column min-vh-100" style="padding-top:125px">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white ">
+            <div class="container-fluid py-2 px-4">
+                <a class="navbar-brand" href="@Url.Action("/", "Home")">
+                    <img src="~/Content/Images/logoAdwiseNav.png" alt="" class="img-logo" />
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@Url.Action("/", "Home")">@Resources.nav_inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ml-3" href="@Url.Action("Nosotros", "Home")">@Resources.nav_nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown enter-from-left">
+                            <a class="nav-link text-dark ml-3" id="navbarDropdown" href="@Url.Action("IndexArea", "Home")">
+                                @Resources.nav_areas
+                            </a>
+
+                            <svg class="svg-arrow" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke-width="1" fill-rule="evenodd">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583" id="arrow_down-[#338]">
+
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+
+                            </svg>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class="links-area"><a class="dropdown-item text-white" href="@Url.Action("TalentManagement", "Home")">Talent Managment</a></li>
+                                <li class="links-area"><a class="dropdown-item text-white" href="@Url.Action("ProcessInnovation", "Home")">Process Innovation</a></li>
+                                <li class="links-area"><a class="dropdown-item text-white" href="@Url.Action("FinanceAudit", "Home")">Finance & Audit</a></li>
+                                <li class="links-area"><a class="dropdown-item text-white" href="@Url.Action("Outsourcing", "Home")">Outsourcing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ml-3" href="@Url.Action("Perfiles", "Home")">@Resources.nav_perfiles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ml-4" href="@Url.Action("IndexAdwise", "Home")">Adwise University</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ml-15" href="@Url.Action("Contacto", "Home")">@Resources.nav_contacto</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center justify-content-center li-swicht">
+                            @using (Html.BeginForm("ChangeCulture", "Home", FormMethod.Post, new { id = "cultureForm" }))
+                            {
+                                <input type="hidden" name="returnUrl" value="@Request.RawUrl" />
+
+                                <label class="ui-switch">
+                                    <input type="checkbox" id="Switch" @(System.Threading.Thread.CurrentThread.CurrentCulture.Name == "es-ES" ? "checked" : "")>
+                                    <div class="slider">
+                                        <div class="circle"></div>
+                                    </div>
+                                </label>
+                            }
+
+
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <main role="main" class="w-100 bg-primary">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="fixed-icon wsp-icon load-hidden">
+        <a href="https://wa.me/50763062254" target="_blank">
+            <img src="~/Content/Images/whatsapp.png" target="_blank" />
+        </a>
+
     </div>
 
+    <footer class="py-5 mt-auto">
+        <p class="text-center text-blue ">© 2024 Adwise Corporate Advisory</p>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Content/js/site.js" asp-append-version="true"></script>
+    <script>
+        document.getElementById('Switch').addEventListener('change', function () {
+            document.getElementById('cultureForm').submit();
+        });
+    </script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

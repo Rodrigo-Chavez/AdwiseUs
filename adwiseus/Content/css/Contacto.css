@@ -1,0 +1,31 @@
+﻿.img-container {
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    height: 430px;
+    font-size: 45px;
+    background-image: url("../images/ContactoFondo.jpg");
+    background-attachment: fixed;
+}
+.img-container h1{
+    font-weight:500;
+}
+
+.text-header {
+    z-index: 2;
+}
+
+.input-adwise {
+    border: 2px solid #1d3562;
+    padding:16px 21px;
+}
+.text-form {
+    text-transform: uppercase;
+    color: #1d3562;
+    letter-spacing:1px;
+}
+.button-adwise{
+    background-color:#1d3562;
+    padding:21px;
+    border:none
+}
